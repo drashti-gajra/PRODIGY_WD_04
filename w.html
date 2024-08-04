@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            /* background-image: url() */
+            background-image: url("drib.gif");
+            /* background-repeat: repeat-x; */
+            /* background-position: top;    */
+        }
+        .weather-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-image: url("w2.gif") ;
+            background-color: aquamarine;
+            /* opacity: 0.3; */
+        }
+        .input-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <div class="input-container">
+            <input type="text" id="location-input" placeholder="Enter a location">
+            <button onclick="getWeatherByInput()">Get Weather</button>
+        </div>
+        <div id="weather-info"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
